@@ -2,9 +2,9 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { api } from '../utils/api';
-import { Search, Loader2, Download, Heart, Download as DownloadIcon, Calendar, Tag, AlertCircle, CheckCircle } from 'lucide-react';
+import { Search as SearchIcon, Loader2, Download, Heart, Download as DownloadIcon, Calendar, Tag, AlertCircle, CheckCircle } from 'lucide-react';
 
-export default function Search() {
+export default function SearchPage() {
   const [query, setQuery] = useState('');
   const [results, setResults] = useState([]);
   const [loading, setLoading] = useState(false);
@@ -57,7 +57,7 @@ export default function Search() {
       <form onSubmit={handleSearch} className="glass rounded-2xl p-6">
         <div className="flex flex-col sm:flex-row gap-3">
           <div className="relative flex-1">
-            <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-dark-muted" />
+            <SearchIcon className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-dark-muted" />
             <input
               type="text"
               value={query}
@@ -73,7 +73,7 @@ export default function Search() {
             disabled={loading || !query.trim()}
             className="px-8 py-4 bg-gradient-to-r from-vault-600 to-vault-500 text-white font-semibold rounded-xl shadow-lg shadow-vault-600/20 transition-all disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
           >
-            {loading ? <Loader2 className="w-5 h-5 animate-spin" /> : <Search className="w-5 h-5" />}
+            {loading ? <Loader2 className="w-5 h-5 animate-spin" /> : <SearchIcon className="w-5 h-5" />}
             Search
           </motion.button>
         </div>
