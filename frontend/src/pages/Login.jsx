@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { useAuth } from '../hooks/useAuth';
-import { Brain, Lock, User, Loader2, Eye, EyeOff } from 'lucide-react';
+import { Lock, User, Loader2, Eye, EyeOff } from 'lucide-react';
 
 export default function Login() {
   const { login } = useAuth();

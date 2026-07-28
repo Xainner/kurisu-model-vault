@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useAuth } from '../hooks/useAuth';
 import {
   LayoutDashboard, Download, Search, Settings, LogOut,
-  Package, Menu, X, Brain
+  Package, Menu, X
 } from 'lucide-react';
 import { useState } from 'react';
 
