@@ -22,6 +22,14 @@ body {
   animation: gradient-shift 8s ease infinite;
 }
 
+/* Logo brand colors */
+:root {
+  --kurisu-red: #8B1A1A;
+  --kurisu-cyan: #4ECDC4;
+  --kurisu-maroon: #6B1010;
+  --kurisu-cream: #F5F0E6;
+}
+
 .glass {
   background: rgba(18, 18, 26, 0.8);
   backdrop-filter: blur(12px);
@@ -35,14 +43,14 @@ body {
 }
 
 .text-gradient {
-  background: linear-gradient(135deg, #748ffc, #4c6ef5, #91a7ff);
+  background: linear-gradient(135deg, var(--kurisu-cyan), #8B1A1A, var(--kurisu-cream));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
 .input-glow:focus {
-  box-shadow: 0 0 0 2px rgba(76, 110, 245, 0.3), 0 0 20px rgba(76, 110, 245, 0.1);
+  box-shadow: 0 0 0 2px rgba(139, 26, 26, 0.3), 0 0 20px rgba(78, 205, 196, 0.1);
 }
 
 .progress-shimmer::after {

@@ -36,17 +36,19 @@ export default function Layout() {
       `}>
         <div className="flex flex-col h-full">
           {/* Logo */}
-          <div className="p-6 border-b border-dark-border">
-            <Link to="/" className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-vault-600 to-vault-400 flex items-center justify-center shadow-lg shadow-vault-600/20">
-                <Brain className="w-6 h-6 text-white" />
-              </div>
-              <div>
-                <h1 className="font-bold text-lg text-gradient">Kurisu</h1>
-                <p className="text-xs text-dark-muted">Model Vault</p>
-              </div>
-            </Link>
-          </div>
+                    <div className="p-6 border-b border-dark-border">
+                      <Link to="/" className="flex items-center gap-3">
+                        <img
+                          src="/logo.png"
+                          alt="Kurisu"
+                          className="w-10 h-10 object-contain rounded-xl"
+                        />
+                        <div>
+                          <h1 className="font-bold text-lg text-gradient">Kurisu</h1>
+                          <p className="text-xs text-dark-muted">Model Vault</p>
+                        </div>
+                      </Link>
+                    </div>
 
           {/* Nav */}
           <nav className="flex-1 p-4 space-y-1">
@@ -119,9 +121,9 @@ export default function Layout() {
               <Menu className="w-5 h-5" />
             </button>
             <Link to="/" className="flex items-center gap-2">
-              <Brain className="w-5 h-5 text-vault-500" />
-              <span className="font-bold text-gradient">Kurisu</span>
-            </Link>
+                          <img src="/logo.png" alt="Kurisu" className="w-6 h-6 object-contain" />
+                          <span className="font-bold text-gradient">Kurisu</span>
+                        </Link>
           </div>
         </header>
 

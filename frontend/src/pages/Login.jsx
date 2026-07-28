@@ -58,16 +58,18 @@ export default function Login() {
         className="relative z-10 w-full max-w-md px-6"
       >
         {/* Logo */}
-        <motion.div
-          initial={{ scale: 0 }}
-          animate={{ scale: 1 }}
-          transition={{ type: 'spring', delay: 0.2 }}
-          className="flex justify-center mb-8"
-        >
-          <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-vault-600 to-vault-400 flex items-center justify-center shadow-2xl shadow-vault-600/30">
-            <Brain className="w-10 h-10 text-white" />
-          </div>
-        </motion.div>
+                <motion.div
+                  initial={{ scale: 0 }}
+                  animate={{ scale: 1 }}
+                  transition={{ type: 'spring', delay: 0.2 }}
+                  className="flex justify-center mb-8"
+                >
+                  <img
+                    src="/logo.png"
+                    alt="Kurisu Model Vault"
+                    className="h-24 object-contain drop-shadow-2xl"
+                  />
+                </motion.div>
 
         <motion.div
           initial={{ opacity: 0 }}

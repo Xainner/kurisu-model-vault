@@ -69,15 +69,17 @@ export default function ChangePassword() {
         className="relative z-10 w-full max-w-md px-6"
       >
         <motion.div
-          initial={{ scale: 0 }}
-          animate={{ scale: 1 }}
-          transition={{ type: 'spring', delay: 0.1 }}
-          className="flex justify-center mb-8"
-        >
-          <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-amber-600 to-amber-400 flex items-center justify-center shadow-2xl shadow-amber-600/30">
-            <Shield className="w-10 h-10 text-white" />
-          </div>
-        </motion.div>
+                  initial={{ scale: 0 }}
+                  animate={{ scale: 1 }}
+                  transition={{ type: 'spring', delay: 0.1 }}
+                  className="flex justify-center mb-8"
+                >
+                  <img
+                    src="/logo.png"
+                    alt="Kurisu Model Vault"
+                    className="h-20 object-contain drop-shadow-2xl"
+                  />
+                </motion.div>
 
         <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.2 }} className="glass rounded-2xl p-8">
           <h1 className="text-2xl font-bold text-center mb-2 text-gradient">Security Required</h1>

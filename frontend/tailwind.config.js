@@ -5,15 +5,22 @@ export default {
   theme: {
     extend: {
       colors: {
-        vault: {
-          50:'#f0f4ff',100:'#dbe4ff',200:'#bac8ff',300:'#91a7ff',
-          400:'#748ffc',500:'#5c7cfa',600:'#4c6ef5',700:'#4263eb',
-          800:'#3b5bdb',900:'#364fc7',950:'#1a237e',
-        },
-        dark: {
-          bg:'#0a0a0f', card:'#12121a', border:'#1e1e2e',
-          hover:'#1a1a2e', text:'#e2e8f0', muted:'#64748b',
-        },
+              vault: {
+                50:'#fdf2f2',100:'#fce7e7',200:'#fac5c5',300:'#f8a4a4',
+                400:'#f57777',500:'#8B1A1A',600:'#7a1818',700:'#691515',
+                800:'#581212',900:'#470f0f',950:'#2d0a0a',
+              },
+              kurisu: {
+                red: '#8B1A1A',
+                maroon: '#6B1010',
+                cyan: '#4ECDC4',
+                cream: '#F5F0E6',
+                dark: '#2D2D2D',
+              },
+              dark: {
+                bg:'#0a0a0f', card:'#12121a', border:'#1e1e2e',
+                hover:'#1a1a2e', text:'#e2e8f0', muted:'#64748b',
+              },
       },
       fontFamily: {
         sans: ['Inter', 'system-ui', 'sans-serif'],
@@ -47,9 +54,9 @@ export default {
           '100%': { transform: 'scale(1)', opacity: '1' },
         },
         glow: {
-          '0%': { boxShadow: '0 0 5px rgba(76,110,245,0.3)' },
-          '100%': { boxShadow: '0 0 20px rgba(76,110,245,0.6)' },
-        },
+                  '0%': { boxShadow: '0 0 5px rgba(139, 26, 26, 0.3)' },
+                  '100%': { boxShadow: '0 0 20px rgba(78, 205, 196, 0.6)' },
+                },
         shimmer: {
           '0%': { transform: 'translateX(-100%)' },
           '100%': { transform: 'translateX(100%)' },
