@@ -36,12 +36,12 @@ export default function Layout() {
       `}>
         <div className="flex flex-col h-full">
           {/* Logo */}
-                    <div className="p-6 border-b border-dark-border">
-                      <Link to="/" className="flex items-center gap-3">
+                    <div className="p-6 border-b border-dark-border flex justify-center">
+                      <Link to="/" className="flex items-center">
                         <img
                           src="/logo.png"
                           alt="Kurisu"
-                          className="w-14 h-14 object-contain rounded-xl"
+                          className="w-20 h-20 object-contain"
                         />
                       </Link>
                     </div>
