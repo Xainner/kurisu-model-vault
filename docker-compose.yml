@@ -1,0 +1,40 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    container_name: kurisu-backend
+    restart: unless-stopped
+    ports:
+      - "${BACKEND_PORT:-8000}:8000"
+    volumes:
+      - ${MODEL_DIR:-/mnt/cloud1/modelos}:/mnt/cloud1/modelos
+      - backend-data:/app/data
+    environment:
+      - PORT=8000
+      - MODEL_DIR=/mnt/cloud1/modelos
+      - HF_TOKEN=${HF_TOKEN:-}
+      - JWT_SECRET=${JWT_SECRET:-kurisu-vault-secret-change-in-prod}
+      - DB_PATH=/app/data/db.sqlite
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/docs')"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: kurisu-frontend
+    restart: unless-stopped
+    ports:
+      - "${APP_PORT:-17012}:80"
+    depends_on:
+      backend:
+        condition: service_healthy
+
+volumes:
+  backend-data:
