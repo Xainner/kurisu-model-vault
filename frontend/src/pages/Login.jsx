@@ -65,10 +65,10 @@ export default function Login() {
                   className="flex justify-center mb-8"
                 >
                   <img
-                    src="/logo.png"
-                    alt="Kurisu Model Vault"
-                    className="h-24 object-contain drop-shadow-2xl"
-                  />
+                                      src="/logo.png"
+                                      alt="Kurisu Model Vault"
+                                      className="h-40 object-contain drop-shadow-2xl"
+                                    />
                 </motion.div>
 
         <motion.div

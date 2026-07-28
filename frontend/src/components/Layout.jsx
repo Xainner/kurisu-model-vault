@@ -41,12 +41,8 @@ export default function Layout() {
                         <img
                           src="/logo.png"
                           alt="Kurisu"
-                          className="w-10 h-10 object-contain rounded-xl"
+                          className="w-14 h-14 object-contain rounded-xl"
                         />
-                        <div>
-                          <h1 className="font-bold text-lg text-gradient">Kurisu</h1>
-                          <p className="text-xs text-dark-muted">Model Vault</p>
-                        </div>
                       </Link>
                     </div>
 
@@ -121,8 +117,7 @@ export default function Layout() {
               <Menu className="w-5 h-5" />
             </button>
             <Link to="/" className="flex items-center gap-2">
-                          <img src="/logo.png" alt="Kurisu" className="w-6 h-6 object-contain" />
-                          <span className="font-bold text-gradient">Kurisu</span>
+                          <img src="/logo.png" alt="Kurisu" className="w-8 h-8 object-contain" />
                         </Link>
           </div>
         </header>
